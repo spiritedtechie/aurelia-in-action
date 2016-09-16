@@ -51,6 +51,7 @@
   },
   "jspm": {
     "dependencies": {
+      "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.1",
       "aurelia-validation": "npm:aurelia-validation@^0.12.5"
     },
     "devDependencies": {

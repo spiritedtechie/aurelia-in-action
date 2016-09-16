@@ -14,6 +14,7 @@ System.config({
   },
 
   map: {
+    "aurelia-animator-css": "npm:aurelia-animator-css@1.0.1",
     "aurelia-validation": "npm:aurelia-validation@0.12.5",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
@@ -41,6 +42,11 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "util": "npm:util@0.10.3"
+    },
+    "npm:aurelia-animator-css@1.0.1": {
+      "aurelia-metadata": "npm:aurelia-metadata@1.0.0",
+      "aurelia-pal": "npm:aurelia-pal@1.0.0",
+      "aurelia-templating": "npm:aurelia-templating@1.1.0"
     },
     "npm:aurelia-binding@1.0.4": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0",
