@@ -1,0 +1,20 @@
+<template>
+  <section class="hero-container">
+      <div class="hero-content">
+        <h1>${heading}</h1>
+        <h4>${subheadingFirst}</h4>
+        <h4>${subheadingSecond}</h4>
+        <div class="search-container">
+          <form role="form" submit.delegate="submit()">
+            <div class="form-group col-xs-4 search-item">
+              <input type="text" value.bind="find" class="form-control" id="find" placeholder="${findHint}">
+            </div>
+            <div class="form-group col-xs-4 search-item">
+              <input type="text" value.bind="near" class="form-control" id="near" placeholder="${location}">
+            </div>
+            <button type="submit" class="btn btn-success col-md-2 search-submit">Search</button>
+          </form>
+        </div>
+      </div>
+  </section>
+</template>
