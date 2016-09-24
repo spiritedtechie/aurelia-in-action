@@ -55,24 +55,20 @@ div.au-stagger {
 .navbar-nav li.loader {
   margin: 12px 24px 0 6px;
 }
-@media max-width: 640px {
-  /*.hero-container {
-    height: 200px;
-  }*/
-}
 .hero-container {
-  height: 600px;
+  position: relative;
+  height: 80vh;
+  width: 100vw;
   background-color: white;
   background-image: url("../img/london.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
+  top: 0px;
 }
 .hero-content {
-  padding-top: 1px;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -82,23 +78,18 @@ div.au-stagger {
   transform: translate(-50%, -50%);
 }
 .hero-content h1, .hero-content h4 {
-  color: white;
   text-align: center;
+  color: white;
   margin-bottom: 15px;
 }
+.heading-container {
+}
 .search-container {
-  max-width: 500px;
-  background: red;
-  margin: auto;
 }
 .search-item {
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 0px !important;
 }
 .search-submit {
-  margin-left: 5px;
-  margin-right: 5px;
+  width: 100%;
 }
 
 /* animation definitions */
