@@ -9,11 +9,11 @@ export class Home {
 
   configureRouter(config, router) {
     config.map([
-      { route: ['', 'food'],  name: 'food',  moduleId: 'food/food',  nav: true, title: 'Food' },
-      { route: 'coffee',  name: 'coffee',  moduleId: 'coffee/coffee',  nav: true, title: 'Coffee' },
-      { route: 'nightlife',  name: 'nightlife',  moduleId: 'nightlife/nightlife',  nav: true, title: 'Nightlife' },
-      { route: 'fun',  name: 'fun',  moduleId: 'fun/fun',  nav: true, title: 'Fun' },
-      { route: 'shopping',  name: 'shopping',  moduleId: 'shopping/shopping',  nav: true, title: 'Shopping' }
+      { route: ['', 'food'],  name: 'food',  moduleId: 'food/food',  nav: true, title: 'Food', settings: {image: 'img/food.png'} },
+      { route: 'coffee',  name: 'coffee',  moduleId: 'coffee/coffee',  nav: true, title: 'Coffee', settings: {image: 'img/coffee.png'} },
+      { route: 'nightlife',  name: 'nightlife',  moduleId: 'nightlife/nightlife',  nav: true, title: 'Nightlife', settings: {image: 'img/nightlife.png'} },
+      { route: 'fun',  name: 'fun',  moduleId: 'fun/fun',  nav: true, title: 'Fun', settings: {image: 'img/fun.png'} },
+      { route: 'shopping',  name: 'shopping',  moduleId: 'shopping/shopping',  nav: true, title: 'Shopping', settings: {image: 'img/shopping.png'} }
     ]);
 
     this.router = router;

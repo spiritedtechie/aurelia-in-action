@@ -91,6 +91,25 @@ div.au-stagger {
   width: 100%;
 }
 
+.suggestions-menu {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.suggestions-menu .item {
+  background-color: blue;
+  width: 80px;
+  height: 80px;
+}
+
+.suggestions-menu .item a {
+  color: white;
+}
+
+.suggestions-menu .item .image {
+
+}
+
 /* animation definitions */
 
 @-webkit-keyframes fadeInRight {

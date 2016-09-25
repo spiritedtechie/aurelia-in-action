@@ -22,16 +22,16 @@
     </div>
   </section>
 
-  <section class="au-animate">
-    <div class="sub-menu">
-      <div class="container">
-        <ul class="list-inline">
-          <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
-            <a href.bind="row.href">${row.title}</a>
-          </li>
-        </ul>
+  <section class="suggestions-container">
+    <div class="suggestions-menu">
+      <div class="row">
+        <div repeat.for="row of router.navigation" class="item col-md-2 ${row.isActive ? 'active' : ''}">
+          <a href="${row.href}">
+            <img src="${row.settings.image}"/>
+            <div class="title">${row.title}</div>
+          </a>
+        </div>
       </div>
-    </div>
   </section>
 
   <section class="au-animate">
