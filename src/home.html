@@ -14,7 +14,7 @@
           <div class="search-item form-group col-md-4">
             <input id="near" type="text" class="form-control" value.bind="near" placeholder="${location}">
           </div>
-          <div class="col-md-4">
+          <div class="form-group-btn col-md-4">
             <button type="submit" class="search-submit btn btn-success">Search</button>
           </div>
         </form>
@@ -22,7 +22,19 @@
     </div>
   </section>
 
-  <section class="other">
-    My other awesome stuff!
+  <section class="au-animate">
+    <div class="sub-menu">
+      <div class="container">
+        <ul class="list-inline">
+          <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+            <a href.bind="row.href">${row.title}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="au-animate">
+    <router-view></router-view>
   </section>
 </template>
