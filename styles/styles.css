@@ -57,7 +57,7 @@ div.au-stagger {
 }
 .hero-container {
   position: relative;
-  height: 80vh;
+  height: 600px;
   width: 100vw;
   background-color: white;
   background-image: url("../img/london.jpg");
@@ -91,15 +91,22 @@ div.au-stagger {
   width: 100%;
 }
 .suggestions-menu {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: center;
 }
-.suggestions-menu .item {
-  background-color: blue;
+.suggestions-menu li {
+  background-color: #1d4f92;
   width: 80px;
   text-align: center;
-  height: 80px;
+  height: auto;
+    border-radius: 20px;
+  padding: 10px;
   color: white;
+    margin-right: 4px;
+}
+.suggestions-menu li:hover {
+  background-color: #3a68a4;
 }
 
 /* animation definitions */
