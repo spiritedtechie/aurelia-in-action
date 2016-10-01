@@ -25,16 +25,13 @@
   <section class="suggestions-container">
     <div class="suggestions-menu">
       <div class="row">
-        <div repeat.for="row of router.navigation" class="item col-md-2 ${row.isActive ? 'active' : ''}">
-          <a href="${row.href}">
-            <img src="${row.settings.image}"/>
-            <div class="title">${row.title}</div>
-          </a>
+        <div repeat.for="menuItem of menu" class="item col-md-2 ${menuItem.isActive ? 'active' : ''}">
+            <img src="${menuItem.image}"/>
+            <div class="title">${menuItem.name}</div>
         </div>
       </div>
   </section>
 
   <section class="au-animate">
-    <router-view></router-view>
   </section>
 </template>
