@@ -72,6 +72,7 @@
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-rc.1.0.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-rc.1.0.0",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0-rc.1.0.0",
+      "aurelia-http-client": "npm:aurelia-http-client@^1.0.0",
       "aurelia-loader-default": "npm:aurelia-loader-default@^1.0.0-rc.1.0.0",
       "aurelia-logging-console": "npm:aurelia-logging-console@^1.0.0-rc.1.0.0",
       "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.0.0-rc.1.0.0",
@@ -85,6 +86,7 @@
       "fetch": "github:github/fetch@^1.0.0",
       "font-awesome": "npm:font-awesome@4.6.3",
       "jquery": "npm:jquery@^2.2.4",
+      "querystring": "github:jspm/nodelibs-querystring@^0.1.0",
       "text": "github:systemjs/plugin-text@^0.0.8"
     },
     "devDependencies": {}
