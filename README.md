@@ -1,7 +1,26 @@
-# Aurelia Foursquare
+# Popular Places Search Aurelia
 
 ## Description
-Created a landing page to search for venues via Foursquare.
+A popular places search built using the Aurelia Framework.
+
+This was a project to experiment with Aurelia by creating a responsive home page for searching places via Foursquare.
+
+## Foursquare Integration
+The search is against the Foursquare explore venues API.
+
+https://developer.foursquare.com/docs/venues/explore
+
+## Technologies Used
+- Aurelia Framework
+- HTML / Javascript / CSS3
+- Bootstrap 3
+- Gulp
+- Jasmine
+- Karma
+- Protractor
+
+## Screenshot
+
 
 ## Running The App
 
