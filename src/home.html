@@ -22,10 +22,10 @@
     </div>
   </section>
 
-  <section class="suggestions-container">
+  <section class="suggestions-menu-container">
     <div class="suggestions-menu">
       <ul class="list-inline">
-        <li repeat.for="menuItem of menu" click.delegate="changeMenuItem(menuItem)" id="${menuItem.id}">
+        <li repeat.for="menuItem of menu" click.delegate="changeMenuItem(menuItem)">
           <div class="image"><img src="${menuItem.image}" /></div>
           <div class="title">${menuItem.name}</div>
         </li>
@@ -33,28 +33,24 @@
     </div>
   </section>
 
-  <section class="au-animate">
+  <section class="suggestions-container">
     <div class="col-md-4" repeat.for="result of results">
-
-      <p>${result.venue.name}</p>
-
-      <!-- <div class='rate-card-container card-container-small'>
-        <div class='card-image'>
-          <h5 class="card--title">${business.name}</h5>
-          <span class="card-overlay"></span>
-          <img class="heroImage" src="" alt="" />
-          <img class="rate-card-reviewer card-container-small__review" src="${business.snippet_image_url}" alt="">
+      <div class='suggestion-card card-small'>
+        <a href="${result.tips[0].canonicalUrl}">
+          <div class='card-header'>
+            <h5 class="title">${result.venue.name}</h5>
+            <span class="overlay"></span>
+            <img if.bind="tipHasPhoto(result.tips[0])" class="image" src="${result.tips[0].photo.prefix}600x600${result.tips[0].photo.suffix}" />
+          </div>
+        </a>
+        <div class="reviewer" if.bind="tipHasUser(result.tips[0])">
+          <img class="image" src="${result.tips[0].user.photo.prefix}64x64${result.tips[0].user.photo.suffix}">
+          <p class="name">${result.tips[0].user.firstName} ${result.tips[0].user.lastName}</p>
         </div>
-        <p class="reviewer">User</p>
-        <div class="feature__caption">
-          <h6>What an Amazing Venue!
-          <ul>
-            <img width="100px" src="${business.rating_img_url_large}"/>
-          </ul>
-        </h6>
-          <p class="card-copy">${business.snippet_text}</p>
+        <div class="card-footer">
+          <p class="review">${result.tips[0].text}</p>
         </div>
-      </div> -->
+      </div>
     </div>
   </section>
 </template>

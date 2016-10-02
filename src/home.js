@@ -42,6 +42,7 @@ export class Home {
   constructor(http) {
     http.configure(config => this.configureHttp(config));
     this.http = http;
+    this.changeMenuItem(this.menu[0]);
   }
 
   configureHttp(config) {
@@ -63,6 +64,7 @@ export class Home {
     return this.http.jsonp("venues/explore?" + paramURL, 'callback')
           .then(response => response.response.response)
           .then(response => this.results = response.groups[0].items)
+          .then(x => this.results = this.results.slice(0, 20))
           .catch(error => this.results = []);
   }
 
@@ -75,5 +77,13 @@ export class Home {
       this.near = this.locationHint;
     }
     this.getVenues(menuItem.name, this.near);
+  }
+
+  tipHasPhoto = function(tip) {
+    return tip != undefined && tip.photo != undefined;
+  }
+
+  tipHasUser = function(tip) {
+    return tip != undefined && tip.user != undefined;
   }
 }

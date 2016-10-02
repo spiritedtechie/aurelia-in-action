@@ -55,6 +55,9 @@ div.au-stagger {
 .navbar-nav li.loader {
   margin: 12px 24px 0 6px;
 }
+
+/* Hero Image*/
+
 .hero-container {
   position: relative;
   height: 600px;
@@ -81,15 +84,18 @@ div.au-stagger {
   color: white;
   margin-bottom: 15px;
 }
-.heading-container {
-}
-.search-container {
-}
-.search-item {
-}
+.heading-container {}
+
+/* Hero Search */
+
+.search-container {}
+.search-item {}
 .search-submit {
   width: 100%;
 }
+
+/* Suggestions Menu*/
+
 .suggestions-menu {
   max-width: 600px;
   margin: 10px auto;
@@ -100,13 +106,89 @@ div.au-stagger {
   width: 80px;
   text-align: center;
   height: auto;
-    border-radius: 20px;
+  border-radius: 20px;
   padding: 10px;
   color: white;
-    margin-right: 4px;
+  margin-right: 4px;
 }
 .suggestions-menu li:hover {
   background-color: #3a68a4;
+}
+
+/* Suggestions Results*/
+
+.card-small {
+  max-width: 600px;
+  min-height: 420px;
+  margin: 0 auto;
+}
+.suggestion-card {
+  background-color: #414d54;
+}
+.card-header {
+  position: relative;
+  height: 170px;
+}
+.card-header .title {
+  position: absolute;
+  z-index: 9999;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+}
+.card-header .overlay {
+  position: absolute;
+  z-index: 9997;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 33, 33, 0.4);
+}
+.card-header .image {
+  position: absolute;
+  z-index: 9996;
+  width: 100%;
+  height: 100%;
+}
+.reviewer {
+  position: absolute;
+  z-index: 9998;
+  top: 130px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+}
+.reviewer .image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2.5px solid #e6f0f2;
+}
+.reviewer .name {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.card-footer {
+  margin-top: 60px;
+}
+.card-footer .review {
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 450;
+  letter-spacing: 0.6px;
 }
 
 /* animation definitions */
