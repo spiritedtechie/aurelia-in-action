@@ -1,4 +1,7 @@
-# aurelia-skeleton-navigation
+# Aurelia Foursquare
+
+## Description
+Created a landing page to search for venues via Foursquare.
 
 ## Running The App
 
