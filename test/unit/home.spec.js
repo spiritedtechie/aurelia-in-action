@@ -33,6 +33,7 @@ describe('the Home module', () => {
 
     sut.getVenues().then(() => {
       expect(sut.results).not.toBe(null);
+      expect(sut.results.length).toBe(20);
       expect(sut.results[0].venue.name).toBe("Homeslice");
       done();
     });
