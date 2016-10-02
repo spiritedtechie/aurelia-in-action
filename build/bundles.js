@@ -4,7 +4,8 @@ module.exports = {
       "includes": [
         "[**/*.js]",
         "**/*.html!text",
-        "**/*.css!text"
+        "**/*.css!text",
+        "querystring"
       ],
       "options": {
         "inject": true,
@@ -17,6 +18,7 @@ module.exports = {
       "includes": [
         "aurelia-framework",
         "aurelia-bootstrapper",
+        "aurelia-http-client",
         "aurelia-fetch-client",
         "aurelia-router",
         "aurelia-animator-css",
