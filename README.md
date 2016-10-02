@@ -20,7 +20,10 @@ https://developer.foursquare.com/docs/venues/explore
 - Protractor
 
 ## Screenshot
-
+![ScreenShot 1](https://github.com/spiritedtechie/popular-places-search-aurelia/raw/master/screenshot1.png)
+![ScreenShot 2](https://github.com/spiritedtechie/popular-places-search-aurelia/raw/master/screenshot2.png)
+![ScreenShot 3](https://github.com/spiritedtechie/popular-places-search-aurelia/raw/master/screenshot3.png)
+![ScreenShot 4](https://github.com/spiritedtechie/popular-places-search-aurelia/raw/master/screenshot4.png)
 
 ## Running The App
 
