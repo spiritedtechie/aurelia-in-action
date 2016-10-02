@@ -19,10 +19,17 @@ https://developer.foursquare.com/docs/venues/explore
 - Karma
 - Protractor
 
-## Screenshot
+## Screenshots
+### Desktop - Hero
 ![ScreenShot 1](https://github.com/spiritedtechie/popular-places-search-aurelia/raw/master/screenshot1.png)
+
+### Desktop - Results
 ![ScreenShot 2](https://github.com/spiritedtechie/popular-places-search-aurelia/raw/master/screenshot2.png)
+
+### Mobile - Hero
 ![ScreenShot 3](https://github.com/spiritedtechie/popular-places-search-aurelia/raw/master/screenshot3.png)
+
+### Mobile - Results
 ![ScreenShot 4](https://github.com/spiritedtechie/popular-places-search-aurelia/raw/master/screenshot4.png)
 
 ## Running The App
