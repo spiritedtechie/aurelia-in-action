@@ -42,12 +42,14 @@ export class Home {
   constructor(http) {
     http.configure(config => this.configureHttp(config));
     this.http = http;
-    this.changeMenuItem(this.menu[0]);
   }
 
   configureHttp(config) {
-    config
-      .withBaseUrl(this.foursquare.baseUrl)
+    config.withBaseUrl(this.foursquare.baseUrl)
+  }
+
+  created() {
+    this.changeMenuItem(this.menu[0]);
   }
 
   getVenues = function(find, near) {
