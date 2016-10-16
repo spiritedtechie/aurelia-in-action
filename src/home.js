@@ -5,7 +5,7 @@ import qs from 'querystring';
 
 @inject(HttpClient)
 export class Home {
-  heading = 'FOURSQUARE';
+  heading = 'Find Awesome Places';
   subheadingFirst = "Find the best places to eat, drink, shop, or visit in any city in the world.";
   subheadingSecond = "Access over 75 million short tips from local experts.";
   findHint = "I'm looking for...";
