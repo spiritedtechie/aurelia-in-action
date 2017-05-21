@@ -29,6 +29,7 @@ module.exports = {
         "aurelia-loader-default",
         "aurelia-history-browser",
         "aurelia-logging-console",
+        "aurelia-pal-browser",
         "bootstrap",
         "bootstrap/css/bootstrap.css!text",
         "fetch",

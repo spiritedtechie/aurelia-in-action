@@ -86,7 +86,7 @@ To run the app under [Electron](http://electron.atom.io), follow these steps.
 1. Install [Electron](http://electron.atom.io)
 
   ```shell
-  npm install electron-prebuilt -g
+  npm install electron --save-dev
 ```
 
 2. From the project folder, execute the following command:
@@ -134,6 +134,29 @@ To run the app under [Electron](http://electron.atom.io), follow these steps.
  ```shell
    electron .
 ```
+
+## Packaging The App Using Electron-Packager
+
+>**Note:** The electron-packager package relies on `"main"` in package.json to know which JS file to use to start the application. To make this work with electron-packager change this line in package.json from `"main": "dist/main.js",` to `"main": "index.js",`
+
+1. Follow steps 1-6 in the previous section (Running The App under Electron).
+
+2. Install electron-packager
+
+  ```shell
+  npm install electron-packager -g
+  ```
+  
+3. Run the command:
+
+  ```shell
+  electron-packager <sourcedir> <appname> --platform=<platform> --arch=<arch> --version <electron version #> [optional flags...]
+  ```
+Include the `--asar` option to create an [asar archive](http://electron.atom.io/docs/tutorial/application-packaging/) from your app.
+
+By default, electron-packager will place the packaged app in a folder under the source folder with the naming convention of `<appname>-<platform>-<arch>`.
+
+See the [electron-packager](https://github.com/electron-userland/electron-packager) readme for more details on options.
 
 
 ## Bundling
